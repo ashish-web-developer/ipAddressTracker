@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ip address tracker</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class = "flex flex-col items-center bg-indigo-400 py-4 space-y-4">
+        <h1 class = "text-center text-gray-100 text-3xl font-bold">IP Address Tracker</h1>
+        <div class = "flex shadow-xl">
+            <input class = "px-4 text-gray-600 h-10 rounded-l-md w-64" type = "text" placeholder = "enter the ip address...">
+            <button class = "h-10 w-10 bg-gray-700 rounded-r-md"><img class = "ml-4" src = "./images/icon-arrow.svg"></button>
+        </div>
+        <div class = "flex sm:flex-row flex-col space-y-4 sm:space-y-0 bg-gray-100 rounded-md shadow-xl py-4 px-4">
+            <h1 class = "text-center sm:border-r border-0 px-8" ><span class = "flex flex-col text-gray-500 uppercase font-bold text-sm">ip address</span><span class = "text-gray-900 text-xl font-bold" id = "ip"></span></h1>
+            <h1 class = "text-center sm:border-r border-0 px-8"><span class = "flex flex-col text-gray-500 uppercase font-bold text-sm">Location</span><span class = "text-gray-900 text-xl font-bold" id = "location"></span></h1>
+            <h1 class = "text-center sm:border-r border-0 px-8"><span class = "flex flex-col text-gray-500 uppercase font-bold text-sm">Timezone</span><span class = "text-gray-900 text-xl font-bold" id = "timezone"></span></h1>
+            <h1 class = "text-center px-8"><span class = "flex flex-col text-gray-500 uppercase font-bold text-sm">isp</span><span class = "text-gray-900 text-xl font-bold" id = "isp"></span></h1>
+        </div>
+    </div>
+    <img class = "absolute left-1/2 transform -translate-x-1/2 py-8" src = "./images/globe.png">
+    <script type = "text/javascript" src = "./script.js">
+    </script>
+</body>
+</html>
